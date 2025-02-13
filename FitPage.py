@@ -29,7 +29,7 @@ def main():
     selected_indices = [min(idx, total_images - 1) for idx in selected_indices]
 
     # Step 5: Create a new folder to copy the selected images.
-    output_folder = os.path.join(folder_path, f"selected_{desired_pages}_pages")
+    output_folder = os.path.join(folder_path, f"Fit for {desired_pages} pages")
     os.makedirs(output_folder, exist_ok=True)
 
     for count, idx in enumerate(selected_indices, start=1):
